@@ -12,8 +12,10 @@ public class MatematicaTest {
 		//		double so = s.soma(35, 16);
 		//		System.out.println(so);
 		
-		double so = m.soma(m.maior(2, 4), m.maior(3, 5));
-		System.out.println(so);
+		double[] numeros = {5, 9, 15, 25, 37};
+		double total = m.soma(numeros);
+		//double so = m.soma(5, 9, 15, 25, 37);
+		System.out.println(total);
 	}
 
 }

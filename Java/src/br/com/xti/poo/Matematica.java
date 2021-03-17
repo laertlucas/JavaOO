@@ -13,9 +13,14 @@ public class Matematica {
 
 	double soma;
 
-	double soma(double um, double dois) {
+	double soma(double [] numeros) {
 		//return um + dois;
-		double s = um + dois;
-		return s;
+		//double s = um + dois;
+		//return s;
+		double total = 0;
+		for(double n : numeros) {
+			total += n;
+		}
+		return total;
 	}
 }
