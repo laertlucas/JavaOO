@@ -30,11 +30,11 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
-	public String getSenha() {
+	public String setSenha(String senha) {
 		return senha;
 	}
 
-	public void setSenha(String senha) {
+	public void isSenhaCorreta(boolean s) {
 		this.senha = senha;
 	}
 }
