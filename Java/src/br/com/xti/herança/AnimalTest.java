@@ -2,9 +2,21 @@ package br.com.xti.herança;
 
 public class AnimalTest {
 
+	public static void barulho(Animal animal) {
+		animal.fazerBarulho();
+	}
+	
+	public static void barulhoSemPolimorfismo(String animal) {
+		if(animal.equals("Cachorro")) {
+			System.out.println("Au, au");
+		} else if (animal.equals("Galinha")) {
+			System.out.println("Có, có");
+		}
+	}
+	
 	public static void main(String[] args) {
 		
-		Cachorro toto = new Cachorro();
+		/*Cachorro toto = new Cachorro();
 		//toto.fazerBarulho();
 		toto.fazerBarulho = "Late";
 		toto.comida = "Ração";
@@ -26,7 +38,34 @@ public class AnimalTest {
 		
 		System.out.println("Carijo vive de " + carijo.comida + " pesando " + carijo.peso + " KG");
 		System.out.println("Carijo " + carijo.fazerBarulho + " pela manhã e tarde!");
-		System.out.println(carijo.dormir);
+		System.out.println(carijo.dormir);*/
+		
+		/*Animal toto = new Cachorro();
+		Animal carijo = new Galinha();
+		
+		System.out.println(toto instanceof Cachorro);
+		System.out.println(toto instanceof Animal);
+		System.out.println(carijo instanceof Galinha);
+		System.out.println(carijo instanceof Cachorro);
+		
+		toto.equals(carijo);// Compara dois objetos!
+		toto.getClass();// Retorna o tipo da classe do objeto(cachorro)
+		toto.hashCode();// Gera um número especial
+		toto.toString();// Retorna a representação da String em texto do objeto*/
+		
+		//Animal generico = new Animal(0,null);
+		Animal toto = new Cachorro();
+		Animal carijo = new Galinha();
+		
+		//generico.fazerBarulho();
+		//toto.fazerBarulho();
+		//carijo.fazerBarulho();
+		
+		barulho(toto);
+		barulho(carijo);
+		
+		barulhoSemPolimorfismo("Cachorro");
+		barulhoSemPolimorfismo("Galinha");
 	}
 
 }
