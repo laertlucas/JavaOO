@@ -27,17 +27,19 @@ public class ContaBTeste {
 		c2.saldo = 25_000;
 
 		c1.dataDeAbertura = new Data();
-		c1.dataDeAbertura.preencheData(2, 4, 2021);;
 		
-		c2.saca(2_500);
-		System.out.println(c2.saldo);
+		System.out.println(c1.recuperaDadosDeImpressao());
+		c1.dataDeAbertura.preencheData(02, 04, 2021);
 		
-		c1 = c2; 
-		if (c1 == c2) {
-			System.out.println("True");
-		} else {
-			System.out.println("False");
-		}
+//		c2.saca(2_500);
+//		System.out.println(c2.saldo);
+//		
+//		c1 = c2; 
+//		if (c1 == c2) {
+//			System.out.println("True");
+//		} else {
+//			System.out.println("False");
+//		}
 		
 	}
 
